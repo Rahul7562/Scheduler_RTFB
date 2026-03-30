@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Scheduler.srcs/sources_1/new/context_bram.v" \
+"../../../../Scheduler.srcs/sources_1/new/context_switch_manager.v" \
+"../../../../Scheduler.srcs/sources_1/new/preemption_comparator_logic.v" \
+"../../../../Scheduler.srcs/sources_1/new/priority_encoder_selector.v" \
+"../../../../Scheduler.srcs/sources_1/new/scheduler_fsm_controller.v" \
+"../../../../Scheduler.srcs/sources_1/new/task1_led_slow.v" \
+"../../../../Scheduler.srcs/sources_1/new/task2_led_fast.v" \
+"../../../../Scheduler.srcs/sources_1/new/task3_led_toggle.v" \
+"../../../../Scheduler.srcs/sources_1/new/task4_led_pattern.v" \
+"../../../../Scheduler.srcs/sources_1/new/task_dispatcher_mux.v" \
+"../../../../Scheduler.srcs/sources_1/new/task_queue_status.v" \
+"../../../../Scheduler.srcs/sources_1/new/top.v" \
+"../../../../Scheduler.srcs/sources_1/new/tb_final_system.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
